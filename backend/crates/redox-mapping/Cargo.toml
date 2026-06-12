@@ -1,0 +1,8 @@
+[package]
+name = "redox-mapping"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+relic-algo = { path = "../relic-algo" }
+serde = { version = "1.0", features = ["derive"] }
