@@ -1,0 +1,11 @@
+[package]
+name = "protection-tree"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+relic-algo = { path = "../relic-algo" }
+serde = { version = "1.0", features = ["derive"] }
+linfa = "0.7"
+linfa-trees = "0.7"
+ndarray = "0.15"
