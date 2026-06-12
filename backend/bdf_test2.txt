@@ -1,0 +1,648 @@
+﻿cargo : warning: unused imports: `ELECTRONS_TRANSFERRED`, `FARADAY_F`, and `MOL
+AR_GAS_R`
+所在位置 行:1 字符: 113
++ ... KTRACE="1"; cargo +stable-x86_64-pc-windows-gnu test --target x86_64- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: unused...d `MOLAR_GAS_R` 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ --> crates\redox-mapping\src\lib.rs:2:5
+  |
+2 |     MOLAR_GAS_R, STANDARD_TEMP_K, ELECTRONS_TRANSFERRED, FARADAY_F,
+  |     ^^^^^^^^^^^                   ^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variant `SUBSURFACE_OXIC` should have an upper camel case name
+   --> crates\redox-mapping\src\lib.rs:230:5
+    |
+230 |     SUBSURFACE_OXIC,
+    |     ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `Su
+bsurfaceOxic`
+    |
+    = note: `#[warn(non_camel_case_types)]` (part of `#[warn(nonstandard_style)
+]`) on by default
+
+warning: variant `MANGANESE_REDUCING` should have an upper camel case name
+   --> crates\redox-mapping\src\lib.rs:231:5
+    |
+231 |     MANGANESE_REDUCING,
+    |     ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: 
+`ManganeseReducing`
+
+warning: variant `IRON_REDUCING` should have an upper camel case name
+   --> crates\redox-mapping\src\lib.rs:232:5
+    |
+232 |     IRON_REDUCING,
+    |     ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `Iron
+Reducing`
+
+warning: variant `SULFATE_REDUCING` should have an upper camel case name
+   --> crates\redox-mapping\src\lib.rs:233:5
+    |
+233 |     SULFATE_REDUCING,
+    |     ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `S
+ulfateReducing`
+
+warning: variant `CARBONATE_REDUCING` should have an upper camel case name
+   --> crates\redox-mapping\src\lib.rs:235:5
+    |
+235 |     CARBONATE_REDUCING,
+    |     ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: 
+`CarbonateReducing`
+
+warning: unused variable: `eh_mv`
+   --> crates\redox-mapping\src\lib.rs:307:39
+    |
+307 | pub fn identify_stable_phase(ph: f64, eh_mv: f64, zone: &RedoxZone) -> St
+ring {
+    |                                       ^^^^^ help: if this is intentional,
+ prefix it with an underscore: `_eh_mv`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by defau
+lt
+
+warning: `redox-mapping` (lib) generated 7 warnings (run `cargo fix --lib -p re
+dox-mapping` to apply 2 suggestions)
+warning: unused variable: `last`
+   --> crates\excavation-mc\src\lib.rs:354:25
+    |
+354 |             if let Some(last) = year_stats.last() {
+    |                         ^^^^ help: if this is intentional, prefix it with
+ an underscore: `_last`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by defau
+lt
+
+warning: `excavation-mc` (lib) generated 1 warning (run `cargo fix --lib -p exc
+avation-mc` to apply 1 suggestion)
+warning: unused import: `relic_algo::HYDROXYAPATITE_CA_P_STOICHIOMETRIC`
+ --> crates\protection-tree\src\lib.rs:1:5
+  |
+1 | use relic_algo::HYDROXYAPATITE_CA_P_STOICHIOMETRIC;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `rng_seed`
+  --> crates\protection-tree\src\lib.rs:60:22
+   |
+60 | fn train_single_tree(rng_seed: u64) -> DecisionTree<f64, usize> {
+   |                      ^^^^^^^^ help: if this is intentional, prefix it with
+ an underscore: `_rng_seed`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by defaul
+t
+
+warning: `protection-tree` (lib) generated 2 warnings (run `cargo fix --lib -p 
+protection-tree` to apply 2 suggestions)
+   Compiling relic-monitor-backend v1.0.0 (D:\SOLO-2\AI_solo_coder_task_B_108\b
+ackend)
+warning: variant `PH_LOW` should have an upper camel case name
+   --> src\models.rs:109:5
+    |
+109 |     PH_LOW,
+    |     ^^^^^^ help: convert the identifier to upper camel case: `PhLow`
+    |
+    = note: `#[warn(non_camel_case_types)]` (part of `#[warn(nonstandard_style)
+]`) on by default
+
+warning: variant `CA_HIGH` should have an upper camel case name
+   --> src\models.rs:110:5
+    |
+110 |     CA_HIGH,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `CaHigh`
+
+warning: variant `TEMP_HIGH` should have an upper camel case name
+   --> src\models.rs:111:5
+    |
+111 |     TEMP_HIGH,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `TempHigh
+`
+
+warning: variant `ORP_ABNORMAL` should have an upper camel case name
+   --> src\models.rs:112:5
+    |
+112 |     ORP_ABNORMAL,
+    |     ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `OrpAb
+normal`
+
+warning: variant `CORROSION_RISK` should have an upper camel case name
+   --> src\models.rs:113:5
+    |
+113 |     CORROSION_RISK,
+    |     ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `Cor
+rosionRisk`
+
+warning: unused imports: `ACTIVATION_ENERGY_EA`, `ELECTRONS_TRANSFERRED`, `FARA
+DAY_F`, `GAS_CONSTANT_R`, `MOLAR_GAS_R`, `MassBalanceState`, `PRE_EXPONENTIAL_A
+`, `REFERENCE_TEMP_K`, `STANDARD_TEMP_K`, `ca_p_ratio_current`, `ca_to_ppm`, `c
+ollagen_degradation_percent`, `hap_solubility`, `nernst_equation`, and `orp_eff
+ect_factor`
+  --> src\algorithms.rs:6:46
+   |
+ 6 |     ArrheniusConfig, CalciumPhosphateConfig, MassBalanceState,
+   |                                              ^^^^^^^^^^^^^^^^
+ 7 |     GAS_CONSTANT_R, ACTIVATION_ENERGY_EA, PRE_EXPONENTIAL_A, REFERENCE_TEM
+P_K,
+   |     ^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+^^^
+ 8 |     HYDROXYAPATITE_CA_P_STOICHIOMETRIC,
+ 9 |     FARADAY_F, MOLAR_GAS_R, STANDARD_TEMP_K, ELECTRONS_TRANSFERRED,
+   |     ^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^
+10 |     arrhenius_rate_constant, ph_catalysis_factor, orp_effect_factor,
+   |                                                   ^^^^^^^^^^^^^^^^^
+11 |     collagen_hydrolysis_rate, collagen_degradation_percent,
+   |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+12 |     expected_collagen_deg_elapsed_months, hap_solubility, dissolution_rate
+,
+   |                                           ^^^^^^^^^^^^^^
+13 |     ca_p_ratio_current, ca_p_ratio_predicted, ca_to_ppm,
+   |     ^^^^^^^^^^^^^^^^^^                        ^^^^^^^^^
+14 |     corrosion_rate_um_per_year, estimate_corrosion_depth_um,
+15 |     assess_risk_level, estimate_microbial_biomass, nernst_equation,
+   |                                                    ^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `crate::algorithms::ArrheniusConfig`
+   --> src\kinetics\arrhenius.rs:231:9
+    |
+231 |     use crate::algorithms::ArrheniusConfig;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DEFAULT_KM`, `DEFAULT_VMAX`, `EnzymeSimulationState`,
+ `enzyme_activity_factor`, `enzyme_ph_factor`, `enzyme_temp_factor`, `michaelis
+_menten_rate`, `microbial_biomass_growth`, `simulate_enzyme_degradation`, and `
+total_collagen_hydrolysis_rate`
+  --> src\kinetics\mod.rs:5:5
+   |
+ 5 |     michaelis_menten_rate,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+ 6 |     enzyme_ph_factor,
+   |     ^^^^^^^^^^^^^^^^
+ 7 |     enzyme_temp_factor,
+   |     ^^^^^^^^^^^^^^^^^^
+ 8 |     enzyme_activity_factor,
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+ 9 |     enzyme_hydrolysis_rate,
+10 |     total_collagen_hydrolysis_rate,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+11 |     microbial_biomass_growth,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+12 |     EnzymeSimulationState,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+13 |     simulate_enzyme_degradation,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+14 |     DEFAULT_VMAX,
+   |     ^^^^^^^^^^^^
+15 |     DEFAULT_KM,
+   |     ^^^^^^^^^^
+
+warning: unused import: `error`
+ --> src\ode\solver.rs:1:24
+  |
+1 | use log::{debug, warn, error, info};
+  |                        ^^^^^
+
+warning: unused imports: `BdfSolver`, `CollagenHydrolysisOde`, `OdeSolution`, `
+OdeSystem`, and `numerical_jacobian`
+  --> src\ode\mod.rs:5:5
+   |
+ 5 |     OdeSolution,
+   |     ^^^^^^^^^^^
+ 6 |     OdeSystem,
+   |     ^^^^^^^^^
+ 7 |     BdfSolver,
+   |     ^^^^^^^^^
+ 8 |     CollagenHydrolysisOde,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+ 9 |     solve_collagen_degradation,
+10 |     numerical_jacobian,
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `error`
+ --> src\lora\udp.rs:4:23
+  |
+4 | use log::{info, warn, error, debug};
+  |                       ^^^^^
+
+warning: unused import: `SocketAddrV4`
+  --> src\lora\udp.rs:53:34
+   |
+53 |         use std::net::{Ipv4Addr, SocketAddrV4};
+   |                                  ^^^^^^^^^^^^
+
+warning: unused imports: `LoraUdpListener`, `LoraUdpSender`, `ManagedUdpSocket`
+, and `UdpSocketGuard`
+ --> src\lora\mod.rs:3:15
+  |
+3 | pub use udp::{ManagedUdpSocket, LoraUdpListener, LoraUdpSender, UdpSocketGu
+ard};
+  |               ^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^  ^^^^^^^^^^^
+^^^
+
+warning: variant `SET_SAMPLE_INTERVAL` should have an upper camel case name
+  --> src\lora_gateway.rs:14:5
+   |
+14 |     SET_SAMPLE_INTERVAL,
+   |     ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: 
+`SetSampleInterval`
+
+warning: variant `SET_THRESHOLDS` should have an upper camel case name
+  --> src\lora_gateway.rs:15:5
+   |
+15 |     SET_THRESHOLDS,
+   |     ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SetT
+hresholds`
+
+warning: variant `SET_TX_POWER` should have an upper camel case name
+  --> src\lora_gateway.rs:16:5
+   |
+16 |     SET_TX_POWER,
+   |     ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SetTxP
+ower`
+
+warning: variant `SET_DATARATE` should have an upper camel case name
+  --> src\lora_gateway.rs:17:5
+   |
+17 |     SET_DATARATE,
+   |     ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SetDat
+arate`
+
+warning: variant `RESET_DEVICE` should have an upper camel case name
+  --> src\lora_gateway.rs:18:5
+   |
+18 |     RESET_DEVICE,
+   |     ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `ResetD
+evice`
+
+warning: variant `FIRMWARE_UPDATE` should have an upper camel case name
+  --> src\lora_gateway.rs:20:5
+   |
+20 |     FIRMWARE_UPDATE,
+   |     ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `Fir
+mwareUpdate`
+
+warning: variant `CONFIG_ACK` should have an upper camel case name
+  --> src\lora_gateway.rs:21:5
+   |
+21 |     CONFIG_ACK,
+   |     ^^^^^^^^^^ help: convert the identifier to upper camel case: `ConfigAc
+k`
+
+warning: variant `QUERY_STATUS` should have an upper camel case name
+  --> src\lora_gateway.rs:22:5
+   |
+22 |     QUERY_STATUS,
+   |     ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `QueryS
+tatus`
+
+warning: unused import: `put`
+ --> src\handlers.rs:1:58
+  |
+1 | use actix_web::{web, HttpResponse, Responder, get, post, put};
+  |                                                          ^^^
+
+warning: unused import: `warn`
+ --> src\services\collagen_kinetics.rs:7:24
+  |
+7 | use log::{info, debug, warn, error};
+  |                        ^^^^
+
+warning: unused imports: `error` and `warn`
+ --> src\services\alerter.rs:3:17
+  |
+3 | use log::{info, warn, error, debug};
+  |                 ^^^^  ^^^^^
+
+warning: unused variable: `ca_cfg`
+  --> src\algorithms.rs:70:17
+   |
+70 |             let ca_cfg = CalciumPhosphateConfig::default();
+   |                 ^^^^^^ help: if this is intentional, prefix it with an und
+erscore: `_ca_cfg`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by defaul
+t
+
+warning: unused variable: `n`
+   --> src\ode\solver.rs:101:13
+    |
+101 |         let n = self.sys.dim();
+    |             ^ help: if this is intentional, prefix it with an underscore:
+ `_n`
+
+warning: unused variable: `n`
+   --> src\ode\solver.rs:397:13
+    |
+397 |         let n = self.dim();
+    |             ^ help: if this is intentional, prefix it with an underscore:
+ `_n`
+
+warning: unused variable: `temp_celsius`
+   --> src\ode\solver.rs:406:5
+    |
+406 |     temp_celsius: f64,
+    |     ^^^^^^^^^^^^ help: if this is intentional, prefix it with an undersco
+re: `_temp_celsius`
+
+warning: unused variable: `ph`
+   --> src\ode\solver.rs:407:5
+    |
+407 |     ph: f64,
+    |     ^^ help: if this is intentional, prefix it with an underscore: `_ph`
+
+warning: value assigned to `total` is never read
+   --> src\handlers.rs:102:21
+    |
+102 |     let mut total = 0;
+    |                     ^ this value is reassigned later and never used
+...
+127 |             total = count;
+    |             ------------- `total` is overwritten here before the previous
+ value is read
+    |
+    = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by def
+ault
+
+warning: unused variable: `ca_ppm`
+  --> src\services\ca_balance.rs:65:54
+   |
+65 |     fn dissolution_rate(&self, ph: f64, temp_c: f64, ca_ppm: f64, saturati
+on_frac: f64) -> f64 {
+   |                                                      ^^^^^^ help: if this 
+is intentional, prefix it with an underscore: `_ca_ppm`
+
+warning: unused variable: `cfg`
+  --> src\services\ca_balance.rs:66:13
+   |
+66 |         let cfg = &self.config.calcium_phosphate;
+   |             ^^^ help: if this is intentional, prefix it with an underscore
+: `_cfg`
+
+warning: fields `enzyme_concentration` and `substrate_initial` are never read
+  --> src\kinetics\arrhenius.rs:12:9
+   |
+ 9 | pub struct MichaelisMentenConfig {
+   |            --------------------- fields in this struct
+...
+12 |     pub enzyme_concentration: f64,
+   |         ^^^^^^^^^^^^^^^^^^^^
+13 |     pub substrate_initial: f64,
+   |         ^^^^^^^^^^^^^^^^^
+   |
+   = note: `MichaelisMentenConfig` has derived impls for the traits `Clone` and
+ `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `t` is never read
+  --> src\ode\solver.rs:33:9
+   |
+32 | pub struct OdeSolution {
+   |            ----------- field in this struct
+33 |     pub t: Vec<f64>,
+   |         ^
+
+warning: fields `sms_secret` and `sms_endpoint` are never read
+  --> src\alerts.rs:26:9
+   |
+22 | pub struct AlertConfig {
+   |            ----------- fields in this struct
+...
+26 |     pub sms_secret: String,
+   |         ^^^^^^^^^^
+...
+29 |     pub sms_endpoint: String,
+   |         ^^^^^^^^^^^^
+   |
+   = note: `AlertConfig` has a derived impl for the trait `Clone`, but this is 
+intentionally ignored during dead code analysis
+
+warning: constant `LORA_DEFAULT_PORT` is never used
+ --> src\lora\udp.rs:6:11
+  |
+6 | pub const LORA_DEFAULT_PORT: u16 = 1780;
+  |           ^^^^^^^^^^^^^^^^^
+
+warning: constant `LORA_MAX_PACKET_SIZE` is never used
+ --> src\lora\udp.rs:7:11
+  |
+7 | pub const LORA_MAX_PACKET_SIZE: usize = 512;
+  |           ^^^^^^^^^^^^^^^^^^^^
+
+warning: field `socket` is never read
+  --> src\lora\udp.rs:11:5
+   |
+10 | pub struct ManagedUdpSocket {
+   |            ---------------- field in this struct
+11 |     socket: Arc<UdpSocket>,
+   |     ^^^^^^
+
+warning: methods `send_to`, `recv_from`, `set_broadcast`, `set_multicast_ttl`, 
+`join_multicast`, and `clone_socket` are never used
+  --> src\lora\udp.rs:28:12
+   |
+15 | impl ManagedUdpSocket {
+   | --------------------- methods in this implementation
+...
+28 |     pub fn send_to(&self, data: &[u8], addr: &str) -> Result<usize, std::i
+o::Error> {
+   |            ^^^^^^^
+...
+34 |     pub fn recv_from(&self, buf: &mut [u8]) -> Result<(usize, String), std
+::io::Error> {
+   |            ^^^^^^^^^
+...
+44 |     pub fn set_broadcast(&self, on: bool) -> Result<(), std::io::Error> {
+   |            ^^^^^^^^^^^^^
+...
+48 |     pub fn set_multicast_ttl(&self, ttl: u32) -> Result<(), std::io::Error
+> {
+   |            ^^^^^^^^^^^^^^^^^
+...
+52 |     pub fn join_multicast(&self, multi_addr: &str, iface: &str) -> Result<
+(), std::io::Error> {
+   |            ^^^^^^^^^^^^^^
+...
+63 |     pub fn clone_socket(&self) -> Arc<UdpSocket> {
+   |            ^^^^^^^^^^^^
+
+warning: struct `LoraUdpListener` is never constructed
+  --> src\lora\udp.rs:74:12
+   |
+74 | pub struct LoraUdpListener {
+   |            ^^^^^^^^^^^^^^^
+
+warning: associated items `new`, `recv_packet`, `send_response`, and `local_add
+r` are never used
+  --> src\lora\udp.rs:80:12
+   |
+79 | impl LoraUdpListener {
+   | -------------------- associated items in this implementation
+80 |     pub fn new(port: u16) -> Result<Self, std::io::Error> {
+   |            ^^^
+...
+89 |     pub fn recv_packet(&mut self) -> Result<(Vec<u8>, String), std::io::Er
+ror> {
+   |            ^^^^^^^^^^^
+...
+95 |     pub fn send_response(&self, data: &[u8], addr: &str) -> Result<usize, 
+std::io::Error> {
+   |            ^^^^^^^^^^^^^
+...
+99 |     pub fn local_addr(&self) -> &str {
+   |            ^^^^^^^^^^
+
+warning: field `socket` is never read
+   --> src\lora\udp.rs:105:5
+    |
+104 | pub struct LoraUdpSender {
+    |            ------------- field in this struct
+105 |     socket: ManagedUdpSocket,
+    |     ^^^^^^
+
+warning: method `send` is never used
+   --> src\lora\udp.rs:114:12
+    |
+108 | impl LoraUdpSender {
+    | ------------------ method in this implementation
+...
+114 |     pub fn send(&self, data: &[u8], dest: &str) -> Result<usize, std::io:
+:Error> {
+    |            ^^^^
+
+warning: methods `as_ref` and `take` are never used
+   --> src\lora\udp.rs:134:12
+    |
+129 | impl UdpSocketGuard {
+    | ------------------- methods in this implementation
+...
+134 |     pub fn as_ref(&self) -> Option<&ManagedUdpSocket> {
+    |            ^^^^^^
+...
+138 |     pub fn take(&mut self) -> Option<ManagedUdpSocket> {
+    |            ^^^^
+
+warning: field `created_at` is never read
+  --> src\lora_gateway.rs:57:5
+   |
+49 | struct PendingDownlink {
+   |        --------------- field in this struct
+...
+57 |     created_at: Instant,
+   |     ^^^^^^^^^^
+   |
+   = note: `PendingDownlink` has derived impls for the traits `Clone` and `Debu
+g`, but these are intentionally ignored during dead code analysis
+
+warning: methods `poll_all_pending` and `device_pending_count` are never used
+   --> src\lora_gateway.rs:241:12
+    |
+107 | impl LoraGateway {
+    | ---------------- methods in this implementation
+...
+241 |     pub fn poll_all_pending(&self) -> Vec<DownlinkFrame> {
+    |            ^^^^^^^^^^^^^^^^
+...
+261 |     pub fn device_pending_count(&self, dev_eui: &str) -> usize {
+    |            ^^^^^^^^^^^^^^^^^^^^
+
+warning: associated function `from_file` is never used
+   --> src\config.rs:243:12
+    |
+237 | impl AppConfig {
+    | -------------- associated function in this implementation
+...
+243 |     pub fn from_file(_path: &str) -> Result<Self, Box<dyn std::error::Err
+or>> {
+    |            ^^^^^^^^^
+
+warning: variant `Shutdown` is never constructed
+  --> src\services\mod.rs:34:5
+   |
+32 | pub enum ServiceMessage {
+   |          -------------- variant in this enum
+33 |     Reading(SensorReading),
+34 |     Shutdown,
+   |     ^^^^^^^^
+   |
+   = note: `ServiceMessage` has derived impls for the traits `Clone` and `Debug
+`, but these are intentionally ignored during dead code analysis
+
+warning: field `config` is never read
+  --> src\services\lora_ingest.rs:13:5
+   |
+12 | pub struct LoraIngestService {
+   |            ----------------- field in this struct
+13 |     config: AppConfig,
+   |     ^^^^^^
+   |
+   = note: `LoraIngestService` has a derived impl for the trait `Clone`, but th
+is is intentionally ignored during dead code analysis
+
+warning: methods `gateway` and `db` are never used
+  --> src\services\lora_ingest.rs:34:12
+   |
+19 | impl LoraIngestService {
+   | ---------------------- methods in this implementation
+...
+34 |     pub fn gateway(&self) -> Arc<Mutex<LoraGateway>> {
+   |            ^^^^^^^
+...
+38 |     pub fn db(&self) -> Database {
+   |            ^^
+
+warning: method `recent_alerts` is never used
+  --> src\services\alerter.rs:26:18
+   |
+16 | impl AlerterService {
+   | ------------------- method in this implementation
+...
+26 |     pub async fn recent_alerts(&self) -> Vec<Alert> {
+   |                  ^^^^^^^^^^^^^
+
+warning: `relic-monitor-backend` (bin "relic-monitor-backend" test) generated 5
+1 warnings (run `cargo fix --bin "relic-monitor-backend" -p relic-monitor-backe
+nd --tests` to apply 18 suggestions)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.05s
+warning: the following packages contain code that will be rejected by a future 
+version of Rust: influxdb v0.7.2
+note: to see what the problems were, use the option `--future-incompat-report`,
+ or run `cargo report future-incompatibilities --id 1`
+     Running unittests src\main.rs (target\x86_64-pc-windows-gnu\debug\deps\rel
+ic_monitor_backend-92f53ad7627496fa.exe)
+
+running 1 test
+test ode::solver::tests::test_bdf_stiff_system ... FAILED
+
+failures:
+
+---- ode::solver::tests::test_bdf_stiff_system stdout ----
+
+thread 'ode::solver::tests::test_bdf_stiff_system' (7780) panicked at src\ode\solver.rs:448:9:
+y1搴斿湪t=1鏃舵帴杩?锛屽疄闄?57.378137
+stack backtrace:
+   0: __rustc::rust_begin_unwind
+             at /rustc/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library\std\src/panicking.rs:689:5
+   1: core::panicking::panic_fmt
+             at /rustc/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library\core\src/panicking.rs:80:14
+   2: relic_monitor_backend::ode::solver::tests::test_bdf_stiff_system
+             at .\src\ode\solver.rs:448:9
+   3: relic_monitor_backend::ode::solver::tests::test_bdf_stiff_system::{{closure}}
+             at .\src\ode\solver.rs:433:31
+   4: core::ops::function::FnOnce::call_once
+             at /rustc/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library\core\src\ops\function.rs:250:5
+   5: <fn() -> core::result::Result<(), alloc::string::String> as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library\core\src\ops/function.rs:250:5
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+
+
+failures:
+    ode::solver::tests::test_bdf_stiff_system
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.05s
+
+error: test failed, to rerun pass `-p relic-monitor-backend --bin relic-monitor
+-backend`
